@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	text-decoration: none;
+	list-style: none;
+}
+html {
+	box-sizing: border-box;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(./img/bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.header {
+	max-height: 360px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+	margin-bottom: 60px;
+}
+.app-title {
+	font-size: 2.5em;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+}
+.userlist {
+	margin-bottom: 40px;
+}
+.model-card {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+}
+.display-7 {
+	font-size: 23px;
+	margin: 0;
+	padding: 0;
+}
+.display-8 {
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+}
+button {
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+p {
+	font-size: 18px;
+}
+span {
+	font-size: 14px;
+}
+.create-user-button {
+	background-color: green;
+	box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+	border: none;
+	font-size: 15px;
+	position: fixed;
+	bottom: 20px;
+	right: 60px;
+	font-weight: bold;
+	color: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 200px;
+
+	transform: rotate(0);
+	transition: 0.3s ease;
+	z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal-background {
+	background: rgba(32, 35, 41, 0.8);
+	position: fixed;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	bottom: -10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+	width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ml-2 {
+	margin-left: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+.w-45 {
+	width: 45%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.w350 {
+	width: 250px;
+}
+input {
+	border-radius: 5px 0 0 5px;
+}
+.wrapper {
+	min-height: calc(100vh - 494px);
 }
